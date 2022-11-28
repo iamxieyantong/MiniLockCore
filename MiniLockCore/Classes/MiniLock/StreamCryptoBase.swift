@@ -73,7 +73,7 @@ extension MiniLock
         }
         
         deinit {
-            blake2SStatePointer.deallocate(capacity: 1)
+            blake2SStatePointer.deallocate()
         }
         
         func incrementNonce() {
